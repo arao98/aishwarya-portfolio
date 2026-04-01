@@ -10,23 +10,34 @@
 // ─── PERSONAL INFO ───────────────────────────────────────────
 export const personal = {
   name: "Aishwarya Rao",
-  title: "Data Analyst · Fraud Analyst · Business Analyst",
+  title: "Data Analyst  Business Intelligence  Fraud Analytics  Business Analysis",
   location: "Irving, TX",
   email: "arao1898@gmail.com",
   phone: "(502) 615-0617",
   linkedin: "https://linkedin.com/in/aishwarya-rao1",
-  github: "", // Add GitHub URL if available
-  resumeUrl: "", // Add a Google Drive or Dropbox link to your resume PDF
+  github: "",
+  resumeUrl:
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/Aishwarya_Rao_Resume_805b237e.pdf",
 };
+
+// ─── NAVIGATION ──────────────────────────────────────────────
+export const navLinks = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Resume", href: "#resume" },
+  { label: "Contact", href: "#contact" },
+];
 
 // ─── HERO SECTION ────────────────────────────────────────────
 export const hero = {
   greeting: "Hi, I'm",
   tagline:
-    "I turn complex data into clear decisions — across fraud strategy, business analytics, and risk intelligence.",
+    "Business Intelligence and Data Analyst with 4+ years of experience building scalable reporting tools, data products, and operational metrics across Insurance, Fintech, and Retail. I turn complex datasets into clear decisions that drive strategy.",
   cta: {
     primary: { label: "View Projects", href: "#projects" },
-    secondary: { label: "Download Resume", href: personal.resumeUrl || "#resume" },
+    secondary: { label: "Download Resume", href: personal.resumeUrl },
     tertiary: { label: "Get in Touch", href: "#contact" },
   },
 };
@@ -35,71 +46,75 @@ export const hero = {
 export const about = {
   headline: "Analytical by nature. Strategic by practice.",
   paragraphs: [
-    "I'm a Fraud Strategy Analyst with over 4 years of experience across Insurance, Fintech, and Retail — building the kind of data infrastructure and risk frameworks that protect revenue, reduce fraud losses, and support executive decision-making.",
-    "My work sits at the intersection of SQL engineering, machine learning, and business storytelling. I design detection frameworks, build Power BI dashboards that executives actually use, and translate noisy datasets into recommendations that drive real policy changes.",
-    "Whether I'm engineering transaction monitoring rules in SQL Server, training anomaly detection models in Python on 1M+ records, or presenting risk appetite trade-offs to senior leadership — I focus on the business outcome, not just the analysis.",
+    "I'm a Business Intelligence and Data Analyst with over 4 years of experience across Insurance, Fintech, and Retail. My work spans fraud analytics, BI reporting, ETL engineering, and business systems analysis — wherever data needs to become a decision.",
+    "I design SQL-based detection frameworks, build Power BI and Tableau dashboards that executives actually rely on, and translate large, noisy datasets into recommendations that drive real policy and process changes.",
+    "Whether I'm engineering transaction monitoring logic in SQL Server, training anomaly detection models in Python on 1M+ records, building ETL pipelines with AWS Glue and Azure Databricks, or presenting risk trade-offs to senior leadership — I stay focused on the business outcome, not just the analysis.",
   ],
   stats: [
     { value: "4+", label: "Years of Experience" },
-    { value: "~18%", label: "Fraud Rate Reduction" },
-    { value: "30%", label: "ML Detection Accuracy Gain" },
-    { value: "90%", label: "Reporting Discrepancy Reduction" },
+    { value: "10M+", label: "Daily Transactions Analyzed" },
+    { value: "40%", label: "Manual Review Queue Reduction" },
+    { value: "35%", label: "Order Processing Time Reduction" },
   ],
 };
 
 // ─── SKILLS SECTION ──────────────────────────────────────────
 export const skills = [
   {
-    category: "Fraud & Risk Analytics",
-    icon: "Shield",
-    items: [
-      "Portfolio-Level Fraud Strategy",
-      "Fraud Strategy Roadmap Ownership",
-      "Fraud Trend Analysis",
-      "Card-Not-Present (CNP) Fraud",
-      "ATO Detection",
-      "Chargeback Analysis",
-      "Transaction Monitoring",
-      "LexisNexis",
-      "Reg E",
-      "Risk Appetite Trade-offs",
-    ],
-  },
-  {
-    category: "SQL & Databases",
+    category: "SQL and Databases",
     icon: "Database",
     items: [
       "SQL Server",
       "T-SQL",
+      "PL/SQL",
       "CTEs",
       "Window Functions",
+      "Query Optimization",
       "Snowflake",
-      "SSIS (ETL Pipelines)",
-      "Azure Data Factory",
-      "Data Modeling",
+      "Relational Data Modeling",
+      "RDBMS",
     ],
   },
   {
-    category: "Visualization & BI",
+    category: "Analytics and BI",
     icon: "BarChart2",
     items: [
-      "Power BI (DAX, KPI Dashboards)",
+      "Power BI (DAX, KPI Dashboards, Drill-Through)",
       "Tableau",
       "SSRS",
-      "Advanced Excel (VBA, Pivot Tables)",
-      "Drill-through Reports",
-      "Executive Dashboards",
+      "Google Analytics (GA4)",
+      "Advanced Excel (VBA, Macros)",
+      "Variance Analysis",
+      "Trend Analysis",
+      "KPI Reporting",
     ],
   },
   {
-    category: "Programming & ML",
+    category: "Programming and ETL",
     icon: "Code2",
     items: [
       "Python (Pandas, NumPy, Scikit-learn)",
       "Machine Learning",
-      "Predictive Modeling",
       "Anomaly Detection",
-      "GitHub Copilot",
+      "ETL Pipelines",
+      "Informatica",
+      "AWS Glue",
+      "Azure Databricks",
+      "Excel VBA",
+    ],
+  },
+  {
+    category: "Fraud and Risk Analytics",
+    icon: "Shield",
+    items: [
+      "Fraud Detection Frameworks",
+      "Rule-Based Detection Logic",
+      "Transaction Monitoring",
+      "ATO Detection",
+      "Chargeback Analysis",
+      "LexisNexis",
+      "Risk Threshold Analysis",
+      "Claims Risk Analytics",
     ],
   },
   {
@@ -108,21 +123,25 @@ export const skills = [
     items: [
       "Requirements Documentation",
       "Stakeholder Reporting",
-      "KPI Reporting",
-      "Root Cause Analysis",
       "Revenue Leakage Analysis",
+      "Root Cause Analysis",
       "Compliance KPIs",
+      "UAT Testing",
+      "Process Improvement",
+      "Data Governance",
     ],
   },
   {
-    category: "Tools & Workflow",
+    category: "Tools and Workflow",
     icon: "Wrench",
     items: [
-      "Jira",
       "Agile / Scrum",
-      "Power Designer",
+      "Jira",
+      "Confluence",
+      "Azure DevOps",
       "Git",
-      "GitHub",
+      "GitHub Copilot",
+      "SDLC",
     ],
   },
 ];
@@ -134,14 +153,14 @@ export const experience = [
     company: "Likewize Corp",
     location: "Southlake, TX",
     period: "May 2025 – Present",
-    type: "Fraud & Risk",
+    type: "Fraud and Risk",
     bullets: [
-      "Shaped portfolio-level fraud strategy for insurance operations across the US and Canada by designing rule-based detection frameworks in SQL Server and surfacing risk patterns that directly influenced underwriting policy decisions.",
-      "Owned the fraud strategy roadmap for insurance claim portfolios — defining detection priorities, setting risk thresholds, and balancing fraud loss reduction against false positive rates and customer experience.",
-      "Engineered transaction monitoring rules in SQL targeting ATO, CNP-equivalent fraud, and rapid-succession abuse patterns, leveraging LexisNexis for identity verification, reducing fraudulent approval rates by ~18%.",
-      "Built and maintained AI/ML models in Python (Pandas, NumPy, Scikit-learn) on 1M+ records to detect chargeback fraud and emerging risk signals, improving detection accuracy by 30% and reducing manual queues by ~40%.",
-      "Developed Power BI executive dashboards (DAX, KPI tiles, drill-through) reporting on fraud savings, loss trends, and risk KPIs for senior leadership, supporting strategic decision-making and risk appetite reviews.",
-      "Presented fraud loss trends, false positive rates, and risk appetite recommendations to senior leadership across Product, Risk, and Operations, driving data-backed decisions on fraud control thresholds.",
+      "Built and maintained SQL Server reporting datasets and relational data models over insurance operations data, validating source structures and tracing field-level lineage to ensure accuracy and reliability across all downstream reporting.",
+      "Designed and implemented scalable ETL workflows in partnership with data engineering teams, leveraging AWS Glue and Azure Databricks to process large-scale datasets and accelerate downstream analytics.",
+      "Engineered rule-based detection logic in SQL that reduced high-risk claim approval rates by approximately 18%, protecting millions in financial exposure through iterative threshold testing and data-driven analysis.",
+      "Developed Power BI executive dashboards using DAX, KPI tiles, and drill-through reporting, and integrated Google Analytics data to track operational trends and surface behavioral patterns across customer touchpoints.",
+      "Built predictive ML models in Python on 1M+ records for anomaly detection and data quality improvement, increasing detection accuracy by 30% and reducing manual review queues by approximately 40% using GitHub Copilot to accelerate development.",
+      "Conducted UAT with end-users and IT teams, documented test cases, validated data outputs, and resolved discrepancies across Agile/Jira sprints while supporting API-based integrations between claims systems and third-party vendors.",
     ],
   },
   {
@@ -151,8 +170,8 @@ export const experience = [
     period: "Dec 2024 – May 2025",
     type: "Data Engineering",
     bullets: [
-      "Analyzed 10M+ daily transactions using advanced T-SQL to identify fraud patterns, financial anomalies, and cost leakage across enterprise retail pipelines, producing strategic insights for cross-functional risk reporting.",
-      "Built automated Power BI reconciliation dashboards that reduced reporting discrepancies by 90% and designed ETL pipelines using SSIS and Azure Data Factory, ensuring data integrity across source systems and improving model precision by 15%.",
+      "Analyzed 10M+ daily transactions using T-SQL to detect anomalies, validate data integrity, and surface financial risk patterns across enterprise-scale retail pipelines, documenting transformation logic and KPI definitions in Confluence.",
+      "Built ETL pipelines loading retail data into Snowflake and developed automated Power BI dashboards that reduced financial reporting discrepancies by 90%, maintaining version control using Azure DevOps.",
     ],
   },
   {
@@ -162,8 +181,8 @@ export const experience = [
     period: "Feb 2024 – Apr 2024",
     type: "Business Analysis",
     bullets: [
-      "Gathered requirements from senior stakeholders and built Power BI and SSRS dashboards for transaction risk signals and compliance KPIs.",
-      "Performed SQL-based trend analysis to uncover revenue leakage patterns, driving a 25% efficiency improvement across reporting workflows.",
+      "Gathered and documented business and technical requirements from senior stakeholders, translated needs into user stories and feature specs, and built Power BI and SSRS dashboards providing real-time visibility into revenue KPIs and compliance metrics.",
+      "Performed SQL-based trend analysis on transaction data to uncover revenue leakage patterns, driving a 25% efficiency improvement while maintaining data governance standards and audit documentation across all reporting environments.",
     ],
   },
   {
@@ -173,8 +192,8 @@ export const experience = [
     period: "Aug 2023 – Feb 2024",
     type: "Data Analysis",
     bullets: [
-      "Architected SQL Server relational data models and built Tableau ERP reporting pipelines across 5+ departments, reducing order processing time by 35%.",
-      "Automated reporting workflows via Excel VBA macros, saving 15+ hours per month in manual data preparation.",
+      "Architected SQL Server relational data models and Tableau ERP pipelines across 5+ departments, cutting order processing time by 35%, and handled ad-hoc data requests from department leads to support planning and operational decisions.",
+      "Automated monthly reporting through Excel VBA macros, saving 15+ hours per month in manual data preparation.",
     ],
   },
   {
@@ -184,8 +203,8 @@ export const experience = [
     period: "Jun 2021 – Jul 2023",
     type: "Business Analysis",
     bullets: [
-      "Built scalable SQL Server data solutions and Tableau KPI dashboards across 10+ SaaS and financial services engagements, delivering fraud trend analysis and risk reporting that reduced discrepancy rates by 20%.",
-      "Built reusable SQL reporting layers over Financials, Sales/CRM, and procurement datasets; used Snowflake for cloud querying and Git for source control, cutting reporting cycles by 40%.",
+      "Analyzed multi-million-row financial datasets in SQL Server across 10+ client engagements, used Informatica for ETL and data integration, and documented source-to-target mappings across Financials, Sales/CRM, and procurement, reducing discrepancy rates by 20%.",
+      "Delivered Tableau KPI dashboards and executive reports for 10+ stakeholders, cutting manual reporting cycles by 40%, and worked across the full SDLC covering requirements, design, testing, and documentation within Agile teams.",
     ],
   },
 ];
@@ -193,10 +212,11 @@ export const experience = [
 // ─── PROJECTS SECTION ────────────────────────────────────────
 export const projects = [
   {
-    title: "Fraud Detection & Claims Risk Dashboard",
+    title: "Fraud Detection and Claims Risk Dashboard",
     category: "Fraud",
     tags: ["SQL", "Python", "Power BI", "Scikit-learn"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/fraud-project-V5XK2yJ6h7GbN4EkvYQgfm.webp",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/fraud-project-V5XK2yJ6h7GbN4EkvYQgfm.webp",
     overview:
       "An end-to-end fraud analytics solution that surfaces suspicious claim behavior, risk flags, and approval trends across an insurance portfolio.",
     problem:
@@ -210,10 +230,11 @@ export const projects = [
     demo: "",
   },
   {
-    title: "Sales & Revenue Performance Dashboard",
+    title: "Sales and Revenue Performance Dashboard",
     category: "Business",
     tags: ["SQL", "Power BI", "DAX"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
     overview:
       "A multi-page Power BI dashboard tracking revenue trends, product performance, monthly KPIs, and regional insights for a retail business.",
     problem:
@@ -230,7 +251,8 @@ export const projects = [
     title: "Customer Segmentation Analysis",
     category: "Data",
     tags: ["Python", "Pandas", "Scikit-learn", "Clustering"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/python-project-3UoqFZL4RArrfvKxgktDHA.webp",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/python-project-3UoqFZL4RArrfvKxgktDHA.webp",
     overview:
       "A Python-based clustering analysis that segments customers by behavioral patterns and surfaces actionable business recommendations for marketing and retention teams.",
     problem:
@@ -244,10 +266,11 @@ export const projects = [
     demo: "",
   },
   {
-    title: "Inventory & Supply Chain Analytics",
+    title: "Inventory and Supply Chain Analytics",
     category: "Business",
     tags: ["SQL", "Power BI", "Operations"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/supply-chain-project-CpnweJfXtGCQKHKAVBTK9H.webp",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/supply-chain-project-CpnweJfXtGCQKHKAVBTK9H.webp",
     overview:
       "A SQL and Power BI solution that tracks stock movement, identifies backorder patterns, and surfaces operational bottlenecks across a multi-warehouse supply chain.",
     problem:
@@ -261,10 +284,11 @@ export const projects = [
     demo: "",
   },
   {
-    title: "ETL & Reporting Automation",
+    title: "ETL and Reporting Automation",
     category: "Data",
     tags: ["Python", "SQL", "SSIS", "Automation"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/etl-project-6jk6AdcgCjc74g2QGY5ESX.webp",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/etl-project-6jk6AdcgCjc74g2QGY5ESX.webp",
     overview:
       "An automated data pipeline that cleans, transforms, and loads raw transactional data into reporting-ready tables, replacing a manual 4-hour weekly process.",
     problem:
@@ -281,7 +305,8 @@ export const projects = [
     title: "Business KPI Insights Dashboard",
     category: "Business",
     tags: ["Power BI", "SQL", "Excel", "KPIs"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/kpi-project-2FAySUA8BzEg39pTahPSTR.webp",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/kpi-project-2FAySUA8BzEg39pTahPSTR.webp",
     overview:
       "An executive-level KPI dashboard consolidating operational metrics across finance, sales, and operations into a single source of truth for leadership reviews.",
     problem:
@@ -305,30 +330,20 @@ export const education = [
     period: "Aug 2023 – Aug 2024",
   },
   {
-    degree: "B.Tech in Electronics & Communications",
+    degree: "B.Tech in Electronics and Communications",
     institution: "Dayananda Sagar University",
     location: "Bengaluru, India",
     period: "Aug 2017 – May 2021",
   },
 ];
 
-// ─── CERTIFICATIONS (placeholder — add when earned) ──────────
+// ─── CERTIFICATIONS ──────────────────────────────────────────
 export const certifications: {
   name: string;
   issuer: string;
   date: string;
   url?: string;
 }[] = [
-  // Example:
+  // Add certifications here when earned:
   // { name: "Microsoft Certified: Power BI Data Analyst Associate", issuer: "Microsoft", date: "2024", url: "" },
-];
-
-// ─── NAVIGATION ──────────────────────────────────────────────
-export const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Resume", href: "#resume" },
-  { label: "Contact", href: "#contact" },
 ];

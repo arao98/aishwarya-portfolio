@@ -1,6 +1,7 @@
 /**
  * Navbar — sticky top navigation with dark mode toggle and mobile menu
  * Design: Refined Modernism — warm bg, deep slate text, teal accent
+ * No symbol characters used.
  */
 import { useState, useEffect } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
@@ -25,6 +26,8 @@ export default function Navbar() {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
+  const firstName = personal.name.split(" ")[0];
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -34,15 +37,17 @@ export default function Navbar() {
       }`}
     >
       <nav className="container flex items-center justify-between h-16">
-        {/* Logo / Name */}
+        {/* Logo / Name — no dot symbol */}
         <a
           href="#"
-          onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-          className="font-display font-bold text-lg text-foreground hover:text-primary transition-colors"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="font-bold text-lg text-foreground hover:text-primary transition-colors"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          {personal.name.split(" ")[0]}
-          <span className="text-primary">.</span>
+          {firstName}
         </a>
 
         {/* Desktop nav links */}

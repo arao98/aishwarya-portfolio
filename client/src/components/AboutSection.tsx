@@ -1,8 +1,8 @@
 /**
  * AboutSection — Professional summary with stats
  * Design: Refined Modernism — asymmetric two-column layout on desktop
+ * No symbol characters used.
  */
-import { useRef } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { about } from "@/data/content";
 
@@ -17,7 +17,7 @@ export default function AboutSection() {
     >
       <div className="container">
         <div className="grid lg:grid-cols-[1fr_1.6fr] gap-16 items-start">
-          {/* Left column — heading */}
+          {/* Left column — heading + stats */}
           <div>
             <p className="section-label mb-3 fade-up">About</p>
             <h2

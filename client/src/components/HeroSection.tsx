@@ -5,14 +5,19 @@
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { personal, hero } from "@/data/content";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/hero-bg-AG8ZRU76Z79bFihCTMvyeS.webp";
+const HERO_BG =
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/hero-bg-AG8ZRU76Z79bFihCTMvyeS.webp";
 
 export default function HeroSection() {
   const handleScroll = (href: string) => {
+    if (!href || href === "#") return;
     const id = href.replace("#", "");
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
+
+  // Split the title string on two or more spaces to get individual role badges
+  const roles = personal.title.split(/\s{2,}/);
 
   return (
     <section
@@ -40,7 +45,7 @@ export default function HeroSection() {
 
           {/* Name */}
           <h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4 fade-up visible"
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-5 fade-up visible"
             style={{
               fontFamily: "var(--font-display)",
               transitionDelay: "80ms",
@@ -50,18 +55,18 @@ export default function HeroSection() {
             {personal.name}
           </h1>
 
-          {/* Title badges */}
+          {/* Role badges — no symbols */}
           <div
-            className="flex flex-wrap gap-2 mb-6 fade-up visible"
+            className="flex flex-wrap gap-2 mb-7 fade-up visible"
             style={{ transitionDelay: "160ms" }}
           >
-            {personal.title.split(" · ").map((t) => (
+            {roles.map((role) => (
               <span
-                key={t}
+                key={role}
                 className="text-sm font-medium px-3 py-1 rounded-sm border border-primary/30 text-primary bg-primary/8"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                {t}
+                {role.trim()}
               </span>
             ))}
           </div>
@@ -88,27 +93,16 @@ export default function HeroSection() {
               <ArrowRight size={15} />
             </button>
 
-            {personal.resumeUrl ? (
-              <a
-                href={personal.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm font-semibold rounded-sm hover:bg-muted transition-colors"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                <Download size={15} />
-                {hero.cta.secondary.label}
-              </a>
-            ) : (
-              <button
-                onClick={() => handleScroll("#resume")}
-                className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm font-semibold rounded-sm hover:bg-muted transition-colors"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                <Download size={15} />
-                {hero.cta.secondary.label}
-              </button>
-            )}
+            <a
+              href={hero.cta.secondary.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm font-semibold rounded-sm hover:bg-muted transition-colors"
+              style={{ fontFamily: "var(--font-body)" }}
+            >
+              <Download size={15} />
+              {hero.cta.secondary.label}
+            </a>
 
             <button
               onClick={() => handleScroll(hero.cta.tertiary.href)}

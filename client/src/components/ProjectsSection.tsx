@@ -1,8 +1,11 @@
 /**
  * ProjectsSection — Filterable project cards with detail modal
  * Design: Refined Modernism — card grid with category filter tabs
+ *
+ * Bug fix: filter state now uses a stable key-based approach so switching
+ * categories and returning to "All" always renders the full list correctly.
  */
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { X, Github, ExternalLink, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { projects } from "@/data/content";
@@ -10,16 +13,21 @@ import { projects } from "@/data/content";
 type Project = (typeof projects)[number];
 
 const CATEGORIES = ["All", "Fraud", "Data", "Business"] as const;
+type Category = (typeof CATEGORIES)[number];
 
 export default function ProjectsSection() {
   const sectionRef = useScrollReveal() as React.RefObject<HTMLElement>;
-  const [activeCategory, setActiveCategory] = useState<string>("All");
+  const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const filtered =
-    activeCategory === "All"
-      ? projects
-      : projects.filter((p) => p.category === activeCategory);
+  // useMemo ensures the filtered array is recomputed correctly on every category change
+  const filtered = useMemo(
+    () =>
+      activeCategory === "All"
+        ? projects
+        : projects.filter((p) => p.category === activeCategory),
+    [activeCategory]
+  );
 
   return (
     <section
@@ -59,13 +67,13 @@ export default function ProjectsSection() {
           </div>
         </div>
 
-        {/* Project grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Project grid — key on activeCategory forces React to remount the grid cleanly */}
+        <div key={activeCategory} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {filtered.map((project, i) => (
             <div
               key={project.title}
-              className="fade-up bg-card border border-border rounded-sm overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer"
-              style={{ transitionDelay: `${(i % 3) * 60 + 80}ms` }}
+              className="fade-up visible bg-card border border-border rounded-sm overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer"
+              style={{ transitionDelay: `${(i % 3) * 60}ms` }}
               onClick={() => setSelectedProject(project)}
             >
               {/* Image */}
@@ -103,7 +111,9 @@ export default function ProjectsSection() {
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.tags.slice(0, 3).map((tag) => (
-                    <span key={tag} className="skill-tag">{tag}</span>
+                    <span key={tag} className="skill-tag">
+                      {tag}
+                    </span>
                   ))}
                   {project.tags.length > 3 && (
                     <span className="skill-tag">+{project.tags.length - 3}</span>
@@ -164,7 +174,9 @@ export default function ProjectsSection() {
               {/* Tags */}
               <div className="flex flex-wrap gap-1.5 mb-6">
                 {selectedProject.tags.map((tag) => (
-                  <span key={tag} className="skill-tag">{tag}</span>
+                  <span key={tag} className="skill-tag">
+                    {tag}
+                  </span>
                 ))}
               </div>
 

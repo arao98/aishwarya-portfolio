@@ -1,6 +1,7 @@
 /**
  * ExperienceSection — Timeline-style experience cards
  * Design: Refined Modernism — left timeline rail with content cards
+ * No symbol characters used in bullets.
  */
 import { MapPin, Calendar } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
@@ -29,7 +30,10 @@ export default function ExperienceSection() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-0 top-2 bottom-2 w-px bg-border hidden md:block" style={{ left: "11px" }} />
+          <div
+            className="absolute top-2 bottom-2 w-px bg-border hidden md:block"
+            style={{ left: "11px" }}
+          />
 
           <div className="space-y-8">
             {experience.map((job, i) => (
@@ -79,16 +83,15 @@ export default function ExperienceSection() {
                     </div>
                   </div>
 
-                  {/* Bullets */}
-                  <ul className="space-y-2">
+                  {/* Bullets — no symbols, uses a small teal left border on each item */}
+                  <ul className="space-y-2.5">
                     {job.bullets.map((bullet, bi) => (
                       <li
                         key={bi}
-                        className="flex gap-2.5 text-sm text-muted-foreground leading-relaxed"
+                        className="text-sm text-muted-foreground leading-relaxed pl-3 border-l-2 border-primary/25"
                         style={{ fontFamily: "var(--font-body)" }}
                       >
-                        <span className="text-primary mt-1.5 shrink-0">▸</span>
-                        <span>{bullet}</span>
+                        {bullet}
                       </li>
                     ))}
                   </ul>
@@ -131,7 +134,10 @@ export default function ExperienceSection() {
                   <span className="inline-flex items-center gap-1">
                     <MapPin size={10} /> {edu.location}
                   </span>
-                  <span className="inline-flex items-center gap-1" style={{ fontFamily: "var(--font-mono)" }}>
+                  <span
+                    className="inline-flex items-center gap-1"
+                    style={{ fontFamily: "var(--font-mono)" }}
+                  >
                     <Calendar size={10} /> {edu.period}
                   </span>
                 </div>
