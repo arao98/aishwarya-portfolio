@@ -47,7 +47,7 @@ export default function ContactSection() {
               className="text-base text-muted-foreground leading-relaxed"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              I'm open to new opportunities in data analytics, fraud strategy, and business intelligence. Feel free to reach out — I typically respond within 24 hours.
+              I'm open to new opportunities in data analytics, business intelligence, fraud strategy, supply chain analytics, and operations reporting. Feel free to reach out — I typically respond within 24 hours.
             </p>
 
             <div className="space-y-4">

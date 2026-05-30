@@ -120,12 +120,26 @@ export default function ProjectsSection() {
                   )}
                 </div>
 
-                <button
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:gap-2 transition-all"
-                  style={{ fontFamily: "var(--font-body)" }}
-                >
-                  View Details <ChevronRight size={13} />
-                </button>
+                <div className="flex items-center gap-4">
+                  <button
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:gap-2 transition-all"
+                    style={{ fontFamily: "var(--font-body)" }}
+                  >
+                    View Details <ChevronRight size={13} />
+                  </button>
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-muted-foreground hover:text-primary transition-colors"
+                      style={{ fontFamily: "var(--font-body)" }}
+                    >
+                      <Github size={13} /> Code
+                    </a>
+                  ) : null}
+                </div>
               </div>
             </div>
           ))}
@@ -212,11 +226,11 @@ export default function ProjectsSection() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 border border-border text-sm font-semibold text-foreground rounded-sm hover:bg-muted transition-colors"
                   >
-                    <Github size={14} /> GitHub
+                    <Github size={14} /> View Code
                   </a>
                 ) : (
                   <span className="inline-flex items-center gap-2 px-4 py-2 border border-border text-sm text-muted-foreground rounded-sm opacity-50 cursor-not-allowed">
-                    <Github size={14} /> GitHub (coming soon)
+                    <Github size={14} /> View Code (coming soon)
                   </span>
                 )}
                 {selectedProject.demo ? (

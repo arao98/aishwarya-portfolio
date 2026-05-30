@@ -3,7 +3,7 @@
  * Design: Refined Modernism — card grid with Fira Code skill tags
  */
 import {
-  Shield, Database, BarChart2, Code2, TrendingUp, Wrench,
+  Shield, Database, BarChart2, Code2, TrendingUp, Wrench, Truck,
 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { skills } from "@/data/content";
@@ -15,6 +15,7 @@ const iconMap: Record<string, React.ReactNode> = {
   Code2: <Code2 size={18} />,
   TrendingUp: <TrendingUp size={18} />,
   Wrench: <Wrench size={18} />,
+  Truck: <Truck size={18} />,
 };
 
 export default function SkillsSection() {
