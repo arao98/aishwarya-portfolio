@@ -25,6 +25,7 @@ export const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Dashboards", href: "#dashboards" },
   { label: "Resume", href: "#resume" },
   { label: "Contact", href: "#contact" },
 ];
@@ -33,7 +34,7 @@ export const navLinks = [
 export const hero = {
   greeting: "Hi, I'm",
   tagline:
-    "Data Analyst and Business Intelligence professional with 4+ years of experience across device protection, insurance, fintech, retail, and operations. I build trusted SQL datasets, Tableau and Power BI dashboards, ETL pipelines, and Python models that turn complex data into measurable business decisions.",
+    "Data Analyst and Business Intelligence professional with 5+ years of experience across device protection, insurance, fintech, retail, and operations. I build trusted SQL datasets, Tableau and Power BI dashboards, ETL pipelines, and Python models that turn complex data into measurable business decisions.",
   cta: {
     primary: { label: "View Projects", href: "#projects" },
     secondary: { label: "Download Resume", href: personal.resumeUrl },
@@ -45,12 +46,12 @@ export const hero = {
 export const about = {
   headline: "Turning data complexity into operational clarity.",
   paragraphs: [
-    "I'm a Data Analyst and Business Intelligence professional with 4+ years of experience across device protection, insurance, fintech, retail, and higher education operations. My work spans fraud analytics, supply chain reporting, BI dashboards, ETL engineering, and stakeholder-ready business analysis.",
-    "I build SQL-based detection frameworks, Tableau and Power BI dashboards, Snowflake-ready ETL pipelines, and governed metric layers that leaders can trust for daily decisions.",
+    "I'm a Data Analyst and Business Intelligence professional with 5+ years of experience across device protection, insurance, fintech, retail, and higher education operations. My work spans fraud analytics, supply chain reporting, BI dashboards, ETL engineering, and stakeholder-ready business analysis.",
+    "I build SQL-based detection frameworks, Tableau and Power BI dashboards, Snowflake-ready ETL pipelines, and governed metric layers that leaders can trust for daily decisions. I also apply Python and R for statistical modeling, predictive analytics, and exploratory data analysis.",
     "Most recently, I connected claims, device, inventory, warehouse, and fulfillment data to reduce high-risk approvals by approximately 18%, cut manual review queues by around 40%, improve anomaly detection accuracy by 30%, and strengthen reporting reliability with field-level lineage documentation.",
   ],
   stats: [
-    { value: "4+", label: "Years of Experience" },
+    { value: "5+", label: "Years of Experience" },
     { value: "10M+", label: "Daily Transactions Analyzed" },
     { value: "40%", label: "Manual Review Queue Reduction" },
     { value: "90%", label: "Reporting Discrepancy Reduction" },
@@ -97,8 +98,10 @@ export const skills = [
     icon: "Code2",
     items: [
       "Python (Pandas, NumPy, Scikit-learn)",
+      "R (ggplot2, dplyr, tidyr)",
       "Machine Learning",
       "Anomaly Detection",
+      "Statistical Modeling",
       "ETL Pipelines",
       "Airflow",
       "Informatica",
@@ -162,6 +165,8 @@ export const skills = [
       "Azure DevOps",
       "Git",
       "GitHub Copilot",
+      "Power Apps",
+      "Power Automate",
       "SDLC",
     ],
   },
@@ -232,6 +237,20 @@ export const experience = [
       "Partnered with procurement and operations teams to define supply chain reporting needs and build data models and Tableau dashboards for vendor performance, inventory position, fulfillment timelines, and logistics cost tracking.",
     ],
   },
+  {
+    title: "Data Analyst Intern",
+    company: "AI Variant",
+    location: "Bengaluru, India",
+    period: "Jun 2020 – May 2021",
+    type: "Data Analysis & Internship",
+    bullets: [
+      "Supported the development of interactive dashboards in Tableau and Power BI, providing key insights that improved sales performance tracking and enabled data-driven decisions for business stakeholders.",
+      "Automated data processing tasks using SQL and Python (Pandas, NumPy), reducing manual workload by approximately 30% and enhancing data accuracy and accessibility across reporting pipelines.",
+      "Performed exploratory data analysis and statistical modeling in R (ggplot2, dplyr, tidyr) to identify sales trends, customer behavior patterns, and seasonal demand signals that informed marketing strategy.",
+      "Utilized advanced Excel skills including Macros, Pivot Tables, and VLOOKUP to analyze datasets, aiding in better decision-making and streamlining monthly reporting cycles.",
+      "Applied foundational knowledge of Office 365 and Power Platform (Power Apps, Power Automate, Dataverse) to optimize business processes and automate repetitive workflows across departments.",
+    ],
+  },
 ];
 
 // ─── PROJECTS SECTION ────────────────────────────────────────
@@ -285,7 +304,7 @@ export const projects = [
     approach:
       "Cleaned customer-level data with Pandas, engineered behavioral features, standardized variables, applied K-Means clustering with elbow and silhouette evaluation, and profiled each segment by value, frequency, and churn-risk signals.",
     findings:
-      "Identified high-value customers with low recent engagement, separated low-ROI segments from profitable retention targets, and translated the segmentation into business actions for lifecycle marketing.",
+      "Identified high-value customers with low recent engagement, separated low-ROI segments from profitable retention targets, and translated the segmentation into actionable campaign tiers for the marketing team.",
     tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib"],
     github: "https://github.com/arao98/customer-segmentation-analysis",
     demo: "",
@@ -343,6 +362,100 @@ export const projects = [
     tools: ["Power BI", "SQL Server", "DAX", "Excel", "Snowflake", "Metric Governance"],
     github: "https://github.com/arao98/business-kpi-insights-dashboard",
     demo: "",
+  },
+];
+
+// ─── DASHBOARDS SECTION ──────────────────────────────────────
+export const dashboards = [
+  {
+    title: "Fraud & Claims Risk — Tableau Operations Dashboard",
+    tool: "Tableau",
+    tags: ["Tableau", "SQL", "Fraud Analytics", "Operations"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/fraud-project-V5XK2yJ6h7GbN4EkvYQgfm.webp",
+    description:
+      "An end-to-end Tableau dashboard suite covering fraud trends, device intake, repair throughput, outbound shipment volume, return logistics, and SLA adherence. Built on SQL Server views with field-level lineage documentation, giving operations managers and senior leadership a consolidated daily signal across claims and fulfillment systems.",
+    highlights: [
+      "Drill-down views by claim type, fraud pattern, and device category",
+      "Real-time SLA exception flags and fulfillment bottleneck tracking",
+      "Reduced data discrepancy rates by 25% through governed lineage documentation",
+    ],
+    github: "https://github.com/arao98/fraud-detection-claims-risk-dashboard",
+  },
+  {
+    title: "Sales & Revenue Performance — Power BI Executive Dashboard",
+    tool: "Power BI",
+    tags: ["Power BI", "DAX", "SQL", "Revenue Analytics"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
+    description:
+      "A Power BI executive reporting framework built on a star-schema SQL data model with DAX measures for YoY growth, rolling averages, and regional variance. Drill-through pages enable product, region, and monthly KPI deep-dives, replacing disconnected spreadsheets with a single governed reporting layer.",
+    highlights: [
+      "DAX-powered YoY, MoM, and rolling-period KPI tiles",
+      "Drill-through pages for product category, region, and channel performance",
+      "Reduced manual reporting effort by 40% across finance and sales teams",
+    ],
+    github: "https://github.com/arao98/sales-revenue-performance-dashboard",
+  },
+  {
+    title: "Inventory & Supply Chain — Power BI Operations Dashboard",
+    tool: "Power BI",
+    tags: ["Power BI", "SQL", "Supply Chain", "Operations"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/supply-chain-project-CpnweJfXtGCQKHKAVBTK9H.webp",
+    description:
+      "A Power BI operations dashboard tracking warehouse inventory movement, stock-level exceptions, backorder rates, supplier lead-time variance, and fulfillment SLA adherence. Built on multi-table SQL joins across inventory, order, and supplier systems, giving logistics and planning teams one governed view for daily reconciliation.",
+    highlights: [
+      "Automated stock exception alerts and reorder flag indicators",
+      "Supplier and warehouse performance scorecards with trend lines",
+      "Enabled faster reconciliation and exception management for logistics teams",
+    ],
+    github: "https://github.com/arao98/inventory-supply-chain-analytics",
+  },
+  {
+    title: "Business KPI Insights — Power BI Semantic Layer Dashboard",
+    tool: "Power BI",
+    tags: ["Power BI", "DAX", "Snowflake", "KPI Governance"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/kpi-project-2FAySUA8BzEg39pTahPSTR.webp",
+    description:
+      "An executive KPI dashboard built on a standardized semantic layer consolidating finance, sales, operations, and compliance metrics from Snowflake into a single Power BI model. Trend lines, variance indicators, and period-over-period comparisons give leadership a consistent, audit-ready reporting view.",
+    highlights: [
+      "Standardized KPI definitions across finance, sales, operations, and compliance",
+      "Reduced monthly reporting preparation from 6 hours to 45 minutes",
+      "Snowflake-backed semantic layer with full metric governance documentation",
+    ],
+    github: "https://github.com/arao98/business-kpi-insights-dashboard",
+  },
+  {
+    title: "ERP Reporting Pipelines — Tableau Self-Service Dashboards",
+    tool: "Tableau",
+    tags: ["Tableau", "SQL Server", "ERP", "Self-Service BI"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/etl-project-6jk6AdcgCjc74g2QGY5ESX.webp",
+    description:
+      "Tableau ERP reporting pipelines built for 5 university departments, replacing ad hoc data requests with self-service dashboards backed by SQL Server data models. Standardized KPIs and automated data refresh reduced order processing time by 35% and cut manual data requests by 50%.",
+    highlights: [
+      "Self-service Tableau dashboards with standardized KPI definitions",
+      "SQL Server data models covering procurement, HR, and operations",
+      "Reduced order processing time by 35% and manual data requests by 50%",
+    ],
+    github: "https://github.com/arao98/etl-reporting-automation",
+  },
+  {
+    title: "Sales Performance Insights — Tableau & Power BI Intern Dashboard",
+    tool: "Tableau",
+    tags: ["Tableau", "Power BI", "SQL", "Python", "R"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/python-project-3UoqFZL4RArrfvKxgktDHA.webp",
+    description:
+      "Interactive sales performance dashboards built during the AI Variant internship using Tableau and Power BI, backed by SQL-automated data pipelines and R-based statistical analysis. Delivered insights on sales trends, customer behavior, and seasonal demand patterns that improved sales performance tracking for business stakeholders.",
+    highlights: [
+      "R (ggplot2, dplyr) statistical analysis surfacing seasonal demand and trend signals",
+      "SQL and Python-automated data pipelines reducing manual workload by 30%",
+      "Power BI and Tableau dashboards delivering actionable sales insights to leadership",
+    ],
+    github: "",
   },
 ];
 

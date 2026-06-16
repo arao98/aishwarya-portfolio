@@ -26,7 +26,7 @@ export default function ResumeSection() {
             className="text-base opacity-70 leading-relaxed mb-8 max-w-xl"
             style={{ fontFamily: "var(--font-body)", color: "inherit" }}
           >
-            Data Analyst and Business Intelligence professional with 4+ years of experience across device protection, insurance, fintech, retail, and operations. Skilled in SQL, Python, Tableau, Power BI, ETL pipelines, Snowflake, AWS Glue, Azure Databricks, fraud analytics, inventory reporting, KPI governance, and stakeholder enablement. Open to Data Analyst, BI Analyst, Fraud Analyst, Business Analyst, and Operations Analytics roles.
+            Data Analyst and Business Intelligence professional with 5+ years of experience across device protection, insurance, fintech, retail, and operations. Skilled in SQL, Python, R, Tableau, Power BI, ETL pipelines, Snowflake, AWS Glue, Azure Databricks, fraud analytics, inventory reporting, KPI governance, and stakeholder enablement. Open to Data Analyst, BI Analyst, Fraud Analyst, Business Analyst, and Operations Analytics roles.
           </p>
 
           <div className="flex flex-wrap gap-3">
