@@ -363,6 +363,42 @@ export const projects = [
     github: "https://github.com/arao98/business-kpi-insights-dashboard",
     demo: "",
   },
+  {
+    title: "Retail Sales & Churn Prediction Model",
+    category: "Data",
+    tags: ["Python", "SQL", "Machine Learning", "Predictive Analytics"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/python-project-3UoqFZL4RArrfvKxgktDHA.webp",
+    overview:
+      "A machine learning pipeline built to predict customer churn and forecast retail sales using historical transaction data and customer engagement metrics.",
+    problem:
+      "The business needed a proactive way to identify at-risk customers and forecast demand to optimize inventory and marketing spend.",
+    approach:
+      "Extracted 5M+ transaction records using SQL, engineered predictive features (RFM, engagement scores) in Python, and trained Random Forest and XGBoost models using Scikit-learn to classify churn probability and predict future sales volume.",
+    findings:
+      "Achieved 85% accuracy in churn prediction, enabling targeted retention campaigns that reduced churn by 12%. Sales forecasting models improved inventory planning accuracy by 20%.",
+    tools: ["Python", "SQL", "Pandas", "Scikit-learn", "XGBoost", "Matplotlib"],
+    github: "https://github.com/arao98/retail-sales-churn-prediction",
+    demo: "",
+  },
+  {
+    title: "Financial Risk & Compliance Dashboard",
+    category: "Business",
+    tags: ["Power BI", "SQL", "Data Governance", "Risk Analytics"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
+    overview:
+      "An interactive Power BI dashboard designed for financial risk monitoring, compliance auditing, and anomaly detection across enterprise transactions.",
+    problem:
+      "Compliance teams were manually auditing thousands of transactions weekly, leading to delayed risk identification and high operational overhead.",
+    approach:
+      "Developed complex SQL stored procedures and CTEs to aggregate and flag anomalous transactions based on predefined risk thresholds. Connected the data model to Power BI to visualize risk exposure, compliance breaches, and audit trails.",
+    findings:
+      "Automated the compliance reporting workflow, reducing audit preparation time by 60% and surfacing high-risk transactions 3x faster for the compliance team.",
+    tools: ["Power BI", "SQL Server", "DAX", "Compliance Analytics", "Data Modeling"],
+    github: "https://github.com/arao98/financial-risk-compliance-dashboard",
+    demo: "",
+  },
 ];
 
 // ─── DASHBOARDS SECTION ──────────────────────────────────────
@@ -456,6 +492,21 @@ export const dashboards = [
       "Power BI and Tableau dashboards delivering actionable sales insights to leadership",
     ],
     github: "",
+  },
+  {
+    title: "Financial Risk & Compliance Dashboard",
+    tool: "Power BI",
+    tags: ["Power BI", "SQL", "Risk Analytics", "Compliance"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
+    description:
+      "An interactive Power BI dashboard designed for financial risk monitoring, compliance auditing, and anomaly detection across enterprise transactions. Built on top of a robust SQL data model that flags anomalous transactions based on predefined risk thresholds.",
+    highlights: [
+      "Automated compliance reporting workflow, reducing audit preparation time by 60%",
+      "Surfaced high-risk transactions 3x faster for the compliance team",
+      "Complex SQL stored procedures and CTEs for anomaly detection",
+    ],
+    github: "https://github.com/arao98/financial-risk-compliance-dashboard",
   },
 ];
 
