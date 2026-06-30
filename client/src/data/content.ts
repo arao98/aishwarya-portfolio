@@ -435,6 +435,24 @@ export const projects = [
     github: "https://github.com/arao98/ecommerce-conversion-dashboard",
     demo: "",
   },
+  {
+    title: "Real-Time FinTech Transaction Monitoring & Liquidity Dashboard",
+    category: "Business",
+    tags: ["Python", "SQL", "Kafka", "Spark Streaming", "Power BI", "FinTech", "Real-time Analytics"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
+    overview:
+      "A real-time FinTech dashboard for monitoring transaction flows, detecting anomalies, and managing liquidity risk across high-volume financial operations.",
+    problem:
+      "Financial institutions face critical challenges in real-time transaction monitoring, including fraud detection, liquidity management, and compliance. Delays in identifying anomalies can lead to significant financial losses and regulatory penalties.",
+    approach:
+      "Developed a data pipeline using Kafka for real-time ingestion of transaction data and Spark Streaming for processing and anomaly detection. Utilized SQL for data warehousing and Power BI for building an interactive, real-time dashboard displaying key metrics such as transaction volume, value, liquidity ratios, and flagged suspicious activities. Implemented Python for advanced anomaly detection algorithms.",
+    findings:
+      "Enabled real-time detection of fraudulent transactions, reducing potential losses by 25%. Improved liquidity risk management by providing up-to-the-minute cash flow visibility, leading to a 10% reduction in capital reserves held. Enhanced compliance by automating anomaly reporting and audit trails.",
+    tools: ["Python", "SQL", "Kafka", "Spark Streaming", "Power BI", "Azure Databricks"],
+    github: "https://github.com/arao98/fintech-realtime-dashboard",
+    demo: "",
+  },
 ];
 
 // ─── DASHBOARDS SECTION ──────────────────────────────────────
@@ -573,6 +591,21 @@ export const dashboards = [
       "Identified key drop-off points and underperforming product categories.",
     ],
     github: "https://github.com/arao98/ecommerce-conversion-dashboard",
+  },
+  {
+    title: "Real-Time FinTech Transaction Monitoring & Liquidity Dashboard",
+    tool: "Power BI",
+    tags: ["Power BI", "SQL", "Kafka", "Spark Streaming", "FinTech", "Real-time Analytics"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
+    description:
+      "An interactive Power BI dashboard providing real-time visibility into financial transaction flows, liquidity positions, and anomaly detection for critical FinTech operations. Integrates data from Kafka and Spark Streaming for up-to-the-minute insights.",
+    highlights: [
+      "Real-time anomaly detection reducing potential fraud losses by 25%.",
+      "Improved liquidity management with up-to-the-minute cash flow visibility.",
+      "Automated reporting for compliance and audit trails.",
+    ],
+    github: "https://github.com/arao98/fintech-realtime-dashboard",
   },
 ];
 
