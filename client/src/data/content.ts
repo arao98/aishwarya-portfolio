@@ -399,6 +399,42 @@ export const projects = [
     github: "https://github.com/arao98/financial-risk-compliance-dashboard",
     demo: "",
   },
+  {
+    title: "Marketing Attribution & ROI Dashboard",
+    category: "Business",
+    tags: ["Power BI", "SQL", "Marketing Analytics", "ROI"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
+    overview:
+      "A comprehensive Power BI dashboard for analyzing marketing campaign performance, channel attribution, and return on investment (ROI) across various digital marketing efforts.",
+    problem:
+      "Marketing teams struggled to accurately attribute conversions to specific campaigns and channels, leading to inefficient budget allocation and an unclear understanding of true marketing ROI.",
+    approach:
+      "Integrated data from Google Analytics, CRM, and advertising platforms (Google Ads, Facebook Ads) using SQL. Developed a multi-touch attribution model (e.g., U-shaped, W-shaped) and calculated key metrics like Customer Acquisition Cost (CAC) and Lifetime Value (LTV). Designed interactive Power BI visualizations to track campaign performance, channel effectiveness, and ROI.",
+    findings:
+      "Identified top-performing marketing channels, reallocated budget to optimize ROI by 15%, and provided actionable insights for future campaign planning, leading to a 10% increase in conversion rates.",
+    tools: ["Power BI", "SQL Server", "Google Analytics", "CRM", "DAX"],
+    github: "https://github.com/arao98/marketing-roi-dashboard",
+    demo: "",
+  },
+  {
+    title: "E-commerce Customer Journey & Conversion Dashboard",
+    category: "Data",
+    tags: ["Python", "SQL", "E-commerce", "Conversion Optimization"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/python-project-3UoqFZL4RArrfvKxgktDHA.webp",
+    overview:
+      "A Python-driven analysis and Power BI dashboard to visualize and optimize the e-commerce customer journey, focusing on conversion funnels, cart abandonment, and product performance.",
+    problem:
+      "An e-commerce business faced high cart abandonment rates and struggled to understand customer behavior across different stages of the purchasing funnel, leading to lost revenue opportunities.",
+    approach:
+      "Extracted customer clickstream and transaction data using SQL. Performed data cleaning and feature engineering in Python (Pandas) to identify key touchpoints and bottlenecks in the customer journey. Built a Power BI dashboard to visualize conversion funnels, identify drop-off points, and analyze product performance.",
+    findings:
+      "Reduced cart abandonment by 18% through targeted interventions at critical funnel stages. Identified underperforming product categories and optimized website navigation, resulting in a 12% increase in overall conversion rate.",
+    tools: ["Python", "SQL Server", "Pandas", "Power BI", "Conversion Analytics"],
+    github: "https://github.com/arao98/ecommerce-conversion-dashboard",
+    demo: "",
+  },
 ];
 
 // ─── DASHBOARDS SECTION ──────────────────────────────────────
@@ -507,6 +543,36 @@ export const dashboards = [
       "Complex SQL stored procedures and CTEs for anomaly detection",
     ],
     github: "https://github.com/arao98/financial-risk-compliance-dashboard",
+  },
+  {
+    title: "Marketing Attribution & ROI Dashboard",
+    tool: "Power BI",
+    tags: ["Power BI", "SQL", "Marketing Analytics", "ROI"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/dashboard-project-QaR45PLys4QsA92uPQBZwm.webp",
+    description:
+      "A comprehensive Power BI dashboard for analyzing marketing campaign performance, channel attribution, and return on investment (ROI) across various digital marketing efforts. It integrates data from multiple sources to provide a holistic view of marketing effectiveness.",
+    highlights: [
+      "Optimized marketing budget allocation by 15% through data-driven insights.",
+      "Increased conversion rates by 10% by identifying top-performing channels.",
+      "Implemented multi-touch attribution models for accurate ROI measurement.",
+    ],
+    github: "https://github.com/arao98/marketing-roi-dashboard",
+  },
+  {
+    title: "E-commerce Customer Journey & Conversion Dashboard",
+    tool: "Power BI",
+    tags: ["Power BI", "SQL", "Python", "E-commerce", "Conversion Optimization"],
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663321700564/dNAdaEDSqbDJ2qxsX2A5xZ/python-project-3UoqFZL4RArrfvKxgktDHA.webp",
+    description:
+      "A Power BI dashboard visualizing the e-commerce customer journey, focusing on conversion funnels, cart abandonment, and product performance. Built on Python-driven analysis of customer clickstream and transaction data.",
+    highlights: [
+      "Reduced cart abandonment by 18% through targeted interventions.",
+      "Increased overall conversion rate by 12% by optimizing website navigation.",
+      "Identified key drop-off points and underperforming product categories.",
+    ],
+    github: "https://github.com/arao98/ecommerce-conversion-dashboard",
   },
 ];
 
