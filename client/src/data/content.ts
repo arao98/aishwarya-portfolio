@@ -34,7 +34,7 @@ export const navLinks = [
 export const hero = {
   greeting: "Hi, I'm",
   tagline:
-    "Data Analyst and Business Intelligence professional with 5+ years of experience across device protection, insurance, fintech, retail, and operations. I build trusted SQL datasets, Tableau and Power BI dashboards, ETL pipelines, and Python models that turn complex data into measurable business decisions.",
+    "Data Analyst and BI Professional with 4+ years of experience analyzing claims, financial, operational, and transactional data using SQL, Python, Power BI, SAS, and Excel. Skilled at translating complex data into clear, actionable insights that support accurate reporting, efficient operations, and informed business decisions.",
   cta: {
     primary: { label: "View Projects", href: "#projects" },
     secondary: { label: "Download Resume", href: personal.resumeUrl },
@@ -46,12 +46,12 @@ export const hero = {
 export const about = {
   headline: "Turning data complexity into operational clarity.",
   paragraphs: [
-    "I'm a Data Analyst and Business Intelligence professional with 5+ years of experience across device protection, insurance, fintech, retail, and higher education operations. My work spans fraud analytics, supply chain reporting, BI dashboards, ETL engineering, and stakeholder-ready business analysis.",
-    "I build SQL-based detection frameworks, Tableau and Power BI dashboards, Snowflake-ready ETL pipelines, and governed metric layers that leaders can trust for daily decisions. I also apply Python and R for statistical modeling, predictive analytics, and exploratory data analysis.",
-    "Most recently, I connected claims, device, inventory, warehouse, and fulfillment data to reduce high-risk approvals by approximately 18%, cut manual review queues by around 40%, improve anomaly detection accuracy by 30%, and strengthen reporting reliability with field-level lineage documentation.",
+    "I'm a Data Analyst and BI Professional with 4+ years of experience analyzing claims, financial, operational, and transactional data using SQL, Python, Power BI, SAS, and Excel.",
+    "I'm experienced in gathering reporting requirements, identifying data gaps and anomalies, validating data integrity, defining KPI standards, and documenting reporting logic across SQL Server, Snowflake, Tableau, and Power BI environments.",
+    "Most recently at Likewize, I applied Python regression and classification models to 1M+ records, improving anomaly detection accuracy by 30% and reducing manual review volume by approximately 40%, while validating dashboard and model outputs through UAT with end-users and IT teams.",
   ],
   stats: [
-    { value: "5+", label: "Years of Experience" },
+    { value: "4+", label: "Years of Experience" },
     { value: "10M+", label: "Daily Transactions Analyzed" },
     { value: "40%", label: "Manual Review Queue Reduction" },
     { value: "90%", label: "Reporting Discrepancy Reduction" },
@@ -175,18 +175,17 @@ export const skills = [
 // ─── EXPERIENCE SECTION ──────────────────────────────────────
 export const experience = [
   {
-    title: "Fraud & Data Analyst",
+    title: "Fraud Data Analyst",
     company: "Likewize Corp",
     location: "Southlake, TX",
     period: "May 2025 – Mar 2026",
     type: "Fraud, Operations, and Risk",
     bullets: [
-      "Built rule-based SQL fraud detection logic across device protection claims data to catch duplicate submissions, staged losses, abnormal swap frequency, and other high-risk patterns, reducing high-risk claim approvals by approximately 18%.",
-      "Ran predictive models in Python using Pandas, NumPy, and Scikit-learn on 1M+ claims and device records to forecast repair demand, score fraud risk, and identify fulfillment bottlenecks, cutting manual review queues by around 40% and improving anomaly detection accuracy by 30%.",
-      "Wrote SQL operations views connecting claims, device, inventory, warehouse, and fulfillment data to monitor device availability, flag supply chain exceptions, and track SLA adherence for order fulfillment.",
-      "Built Tableau dashboards for device intake, repair throughput, outbound shipment volume, return logistics, KPI performance, fraud trends, and operational metrics used by warehouse managers and leadership for daily decisions.",
-      "Maintained scalable SQL Server reporting datasets with full field-level lineage documentation, reducing data discrepancy rates by 25% and strengthening trust across all fraud, warehouse, and executive dashboards.",
-      "Partnered with data engineering to build ETL workflows in AWS Glue and Azure Databricks, improving the quality, availability, and reporting latency of claims, logistics, inventory, and fulfillment datasets.",
+      "Developed complex SQL queries against fraud, claims, and device-return databases to support Tableau and Power BI dashboards covering fraud trends, processing volumes, operational KPIs, and risk exposure across multiple business lines.",
+      "Built Tableau and Power BI dashboards covering claim outcomes, fraud rates, processing volumes, operational backlogs, and risk exposure for operations managers and senior leadership.",
+      "Applied Python (Scikit-learn) regression and classification models to 1M+ records, using feature analysis to identify high-risk drivers, improving anomaly detection accuracy by 30% and reducing manual review volume by ~40%.",
+      "Validated dashboard and model outputs through UAT with end-users and IT teams, documented metric and model definitions in Confluence, and upskilled 10+ stakeholders on risk data interpretation and tool usage.",
+      "Developed an AWS Lambda function integrated with AWS Connect to trigger real-time alerts on high-risk claims, automating a manual escalation step and leveraging GitHub Copilot in VS Code throughout Lambda and SQL development.",
     ],
   },
   {
@@ -196,9 +195,9 @@ export const experience = [
     period: "Dec 2024 – May 2025",
     type: "Data Engineering",
     bullets: [
-      "Analyzed 10M+ daily retail transactions using T-SQL to identify financial risk patterns, inventory discrepancies, fulfillment anomalies, and reporting quality issues, reducing reporting errors by 30% while documenting KPI logic in Confluence.",
-      "Built ETL pipelines loading retail and inventory data into Snowflake and automated financial and operational dashboards, cutting reporting discrepancies by 90% with version control maintained through Azure DevOps.",
-      "Developed warehousing reports tracking inventory movement, stock levels, and order fulfillment trends used by logistics and planning teams for reconciliation and downstream decision-making.",
+      "Converted 5+ manual retail reports into Snowflake SQL views and scheduled Power BI dashboards, validating outputs against historical data across multiple periods before cutover and reducing reporting discrepancies by 90%.",
+      "Wrote T-SQL and Snowflake queries using CTEs, window functions, and multi-table joins across 10M+ daily transactions to surface inventory, sales, and fulfillment trends for business partners.",
+      "Standardized KPI logic and field definitions across 4+ dashboards in Confluence, aligning marketing, operations, and finance teams on a single reporting layer and reducing reconciliation requests.",
     ],
   },
   {
@@ -208,9 +207,8 @@ export const experience = [
     period: "Feb 2024 – Apr 2024",
     type: "Business Analysis",
     bullets: [
-      "Gathered requirements from client stakeholders, translated them into feature specifications, and delivered Power BI and SSRS dashboards giving leadership live visibility into revenue KPIs, compliance metrics, and program performance.",
-      "Ran SQL trend analysis on 3M+ transaction records to identify revenue leakage patterns, driving a 25% efficiency improvement while maintaining data governance standards across reporting environments.",
-      "Standardized metric definitions and audit documentation across 5 business units, supporting compliance reviews and giving cross-functional teams a single source of truth for reporting.",
+      "Partnered with senior stakeholders to gather and translate revenue, budget, and compliance reporting requirements into SQL datasets, Power BI dashboards, and SSRS reports while managing delivery across multiple concurrent Agile sprints.",
+      "Analyzed more than 3 million transaction records using SQL, trend analysis, and budget-to-actual variance reporting to identify revenue leakage and operational inefficiencies, improving resource allocation efficiency by 25% through data-driven insights.",
     ],
   },
   {
@@ -220,9 +218,8 @@ export const experience = [
     period: "Aug 2023 – Feb 2024",
     type: "Data Analysis",
     bullets: [
-      "Designed SQL Server data models and Tableau ERP reporting pipelines for 5 departments, cutting order processing time by 35% and giving department leads reliable data for planning and resource allocation decisions.",
-      "Automated monthly reporting using Excel VBA macros, saving 15+ hours per month while flagging inventory availability gaps and fulfillment delays before they affected operations.",
-      "Partnered with stakeholders to define KPIs and launch self-service Tableau dashboards, reducing manual data requests by 50% and improving reporting accessibility across the organization.",
+      "Built SQL Server data models and Tableau ERP reporting pipelines across 5 departments, reducing order processing time by 35% and cutting ad hoc data requests by 50% through self-service dashboards with standardized KPIs.",
+      "Automated recurring Excel reports using VBA macros, eliminating 15+ hours of monthly manual effort across departmental reporting cycles.",
     ],
   },
   {
@@ -232,23 +229,8 @@ export const experience = [
     period: "Jun 2021 – Jul 2023",
     type: "Business Analysis",
     bullets: [
-      "Built Tableau KPI dashboards for 10+ client engagements, reducing manual reporting cycles by 40% by connecting data from financial systems, CRM platforms, and procurement sources into unified reporting views.",
-      "Managed ETL workflows using Informatica across Salesforce and ERP systems, documented source-to-target mappings, and reduced data discrepancy rates by 20% while maintaining governance standards throughout the SDLC.",
-      "Partnered with procurement and operations teams to define supply chain reporting needs and build data models and Tableau dashboards for vendor performance, inventory position, fulfillment timelines, and logistics cost tracking.",
-    ],
-  },
-  {
-    title: "Data Analyst Intern",
-    company: "AI Variant",
-    location: "Bengaluru, India",
-    period: "Jun 2020 – May 2021",
-    type: "Data Analysis & Internship",
-    bullets: [
-      "Supported the development of interactive dashboards in Tableau and Power BI, providing key insights that improved sales performance tracking and enabled data-driven decisions for business stakeholders.",
-      "Automated data processing tasks using SQL and Python (Pandas, NumPy), reducing manual workload by approximately 30% and enhancing data accuracy and accessibility across reporting pipelines.",
-      "Performed exploratory data analysis and statistical modeling in R (ggplot2, dplyr, tidyr) to identify sales trends, customer behavior patterns, and seasonal demand signals that informed marketing strategy.",
-      "Utilized advanced Excel skills including Macros, Pivot Tables, and VLOOKUP to analyze datasets, aiding in better decision-making and streamlining monthly reporting cycles.",
-      "Applied foundational knowledge of Office 365 and Power Platform (Power Apps, Power Automate, Dataverse) to optimize business processes and automate repetitive workflows across departments.",
+      "Wrote SQL queries, stored procedures, and reusable reporting views across 10+ financial-services and retail engagements spanning financial systems, CRM, sales, and procurement, reducing manual reporting cycles by 40%.",
+      "Built Tableau and SAP Business Objects dashboards for client leadership on top of Snowflake datasets sourced through Informatica ETL workflows, documenting source-to-target mappings and field definitions to support ongoing report maintenance and reducing data discrepancies by 20%.",
     ],
   },
 ];

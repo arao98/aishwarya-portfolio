@@ -44,7 +44,7 @@ export default function DashboardsSection() {
               className="text-sm text-muted-foreground mt-3 max-w-xl fade-up"
               style={{ fontFamily: "var(--font-body)", transitionDelay: "120ms" }}
             >
-              A curated showcase of interactive dashboards built across 5+ years of analytics work — covering fraud operations, revenue performance, supply chain, and executive KPI reporting.
+              A curated showcase of interactive dashboards built across 4+ years of analytics work — covering fraud operations, revenue performance, supply chain, and executive KPI reporting.
             </p>
           </div>
 
