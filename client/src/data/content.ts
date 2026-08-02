@@ -11,7 +11,7 @@
 export const personal = {
   name: "Aishwarya Rao",
   title: "Data Analyst  BI Analyst  Fraud Analytics  Supply Chain Analytics",
-  location: "Irving, TX",
+  location: "TX",
   email: "arao1898@gmail.com",
   phone: "(502) 615-0617",
   linkedin: "https://linkedin.com/in/aishwarya-rao1",
